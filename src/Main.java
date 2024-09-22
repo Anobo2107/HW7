@@ -12,7 +12,9 @@ public class Main {
             totalDeposit += monthlyDeposit;
             System.out.println("Месяц " + month + ", сумма накоплений равна " + totalDeposit);
         }
+        System.out.println("Для достижения цели в " + target + " рублей потребуется " + month + " месяцев.");
         System.out.println();
+
         System.out.println("Task2");
         int i = 1;
         while (i <= 10) {
@@ -21,9 +23,8 @@ public class Main {
         }
         System.out.println();
         int j = 10;
-        while (j >= 1) {
+        for (j = 10; j >= 1; j--) {
             System.out.print(j + " ");
-            j--;
         }
         System.out.println();
         System.out.println("Task3");
@@ -93,6 +94,7 @@ public class Main {
         for (int year = startYear; year <= endYear; year++) {
             if (year % 79 == 0) {
                 System.out.println(year);
+
             }
         }
     }
